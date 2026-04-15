@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "name": "Aminul Islam",
+        "picture": "https://randomuser.me/api/portraits/men/11.jpg",
+        "email": "aminul.islam@gmail.com",
+        "days_since_contact": 3,
+        "status": "on-track",
+        "tags": [
+            "work",
+            "developer"
+        ],
+        "bio": "Met during a freelance project collaboration. Still in regular contact.",
+        "goal": 7,
+        "next_due_date": "2025-04-18"
+    },
+    {
+        "id": 2,
+        "name": "Nusrat Jahan",
+        "picture": "https://randomuser.me/api/portraits/women/21.jpg",
+        "email": "nusrat.jahan@gmail.com",
+        "days_since_contact": 18,
+        "status": "almost due",
+        "tags": [
+            "university",
+            "friend"
+        ],
+        "bio": "Classmate from university days. Occasionally catch up online.",
+        "goal": 14,
+        "next_due_date": "2025-04-25"
+    },
+    {
+        "id": 3,
+        "name": "Tanvir Hossain",
+        "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+        "email": "tanvir.hossain@gmail.com",
+        "days_since_contact": 45,
+        "status": "overdue",
+        "tags": [
+            "gym",
+            "fitness buddy"
+        ],
+        "bio": "Gym partner from local fitness center. Lost touch recently.",
+        "goal": 30,
+        "next_due_date": "2025-03-20"
+    },
+    {
+        "id": 4,
+        "name": "Shaila Rahman",
+        "picture": "https://randomuser.me/api/portraits/women/33.jpg",
+        "email": "shaila.rahman@gmail.com",
+        "days_since_contact": 6,
+        "status": "on-track",
+        "tags": [
+            "office",
+            "colleague"
+        ],
+        "bio": "Works in the same office team, daily communication ongoing.",
+        "goal": 10,
+        "next_due_date": "2025-04-20"
+    },
+    {
+        "id": 5,
+        "name": "Mahfuz Alam",
+        "picture": "https://randomuser.me/api/portraits/men/44.jpg",
+        "email": "mahfuz.alam@gmail.com",
+        "days_since_contact": 27,
+        "status": "almost due",
+        "tags": [
+            "business",
+            "client"
+        ],
+        "bio": "Regular client for web development projects.",
+        "goal": 21,
+        "next_due_date": "2025-04-22"
+    },
+    {
+        "id": 6,
+        "name": "Rafiq Uddin",
+        "picture": "https://randomuser.me/api/portraits/men/52.jpg",
+        "email": "rafiq.uddin@gmail.com",
+        "days_since_contact": 60,
+        "status": "overdue",
+        "tags": [
+            "childhood",
+            "old friend"
+        ],
+        "bio": "Childhood friend from village. Haven’t met in years.",
+        "goal": 30,
+        "next_due_date": "2025-03-10"
+    },
+    {
+        "id": 7,
+        "name": "Farhana Ahmed",
+        "picture": "https://randomuser.me/api/portraits/women/45.jpg",
+        "email": "farhana.ahmed@gmail.com",
+        "days_since_contact": 2,
+        "status": "on-track",
+        "tags": [
+            "startup",
+            "network"
+        ],
+        "bio": "Met at a startup networking event recently.",
+        "goal": 5,
+        "next_due_date": "2025-04-16"
+    },
+    {
+        "id": 8,
+        "name": "Imran Karim",
+        "picture": "https://randomuser.me/api/portraits/men/61.jpg",
+        "email": "imran.karim@gmail.com",
+        "days_since_contact": 22,
+        "status": "almost due",
+        "tags": [
+            "freelance",
+            "designer"
+        ],
+        "bio": "UI/UX designer I collaborated with on multiple projects.",
+        "goal": 15,
+        "next_due_date": "2025-04-23"
+    },
+    {
+        "id": 9,
+        "name": "Sadia Islam",
+        "picture": "https://randomuser.me/api/portraits/women/52.jpg",
+        "email": "sadia.islam@gmail.com",
+        "days_since_contact": 10,
+        "status": "on-track",
+        "tags": [
+            "school",
+            "friend"
+        ],
+        "bio": "School friend, still connected through social media.",
+        "goal": 12,
+        "next_due_date": "2025-04-19"
+    },
+    {
+        "id": 10,
+        "name": "Kamal Hossain",
+        "picture": "https://randomuser.me/api/portraits/men/72.jpg",
+        "email": "kamal.hossain@gmail.com",
+        "days_since_contact": 38,
+        "status": "overdue",
+        "tags": [
+            "mentor",
+            "career"
+        ],
+        "bio": "Career mentor who guided me during early job search.",
+        "goal": 25,
+        "next_due_date": "2025-03-28"
+    },
+    {
+        "id": 11,
+        "name": "Mitu Akter",
+        "picture": "https://randomuser.me/api/portraits/women/63.jpg",
+        "email": "mitu.akter@gmail.com",
+        "days_since_contact": 14,
+        "status": "almost due",
+        "tags": [
+            "community",
+            "volunteer"
+        ],
+        "bio": "Met in a volunteer community program.",
+        "goal": 14,
+        "next_due_date": "2025-04-21"
+    },
+    {
+        "id": 12,
+        "name": "Sabbir Rahman",
+        "picture": "https://randomuser.me/api/portraits/men/85.jpg",
+        "email": "sabbir.rahman@gmail.com",
+        "days_since_contact": 1,
+        "status": "on-track",
+        "tags": [
+            "tech",
+            "friend"
+        ],
+        "bio": "Tech enthusiast friend, often discuss new frameworks.",
+        "goal": 7,
+        "next_due_date": "2025-04-17"
+    }
+]
