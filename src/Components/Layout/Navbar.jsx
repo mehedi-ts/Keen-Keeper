@@ -4,7 +4,7 @@ import { NavLink } from "react-router";
 
 const Navbar = () => {
   return (
-    <div className="  py-4 shadow-md">
+    <div className="  py-4 shadow-md bg-white">
       <div className="nav-main  flex justify-between items-center max-w-400 w-full mx-auto px-2">
         <div className="logo">
           <h1 className="text-2xl font-semibold text-[#244D3F]">
