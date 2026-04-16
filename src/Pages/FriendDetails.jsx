@@ -7,10 +7,15 @@ import {
   Trash2,
   Video,
 } from "lucide-react";
-import React from "react";
+import React, { useContext } from "react";
 import { useLoaderData, useParams } from "react-router";
+import { FriendTimelineContext } from "../Context/FriendTimelineContext";
+import { toast } from "react-toastify";
 
 const FriendDetails = () => {
+  const { addEvent, timeline } = useContext(FriendTimelineContext);
+
+  console.log(timeline);
   const { id } = useParams();
   const friends = useLoaderData();
   console.log(friends);
@@ -26,6 +31,21 @@ const FriendDetails = () => {
     goal,
     next_due_date,
   } = friend;
+
+  const handleActionBtn = (type) => {
+    const date = new Date().toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    });
+    addEvent({
+      friendId: friend.id,
+      friendName: name,
+      type,
+      date,
+    });
+    toast.success(`${type} sent successfully`);
+  };
 
   return (
     <div className="w-full py-20">
@@ -112,15 +132,24 @@ const FriendDetails = () => {
               Quick Check-In
             </h2>
             <div className="grid grid-cols-3 gap-2">
-              <div className="p-4 rounded-lg bg-[#F8FAFC] flex flex-col items-center gap-2 cursor-pointer ">
+              <div
+                onClick={() => handleActionBtn("call")}
+                className="p-4 rounded-lg bg-[#F8FAFC] flex flex-col items-center gap-2 cursor-pointer "
+              >
                 <PhoneCall size={28}></PhoneCall>
                 <p className="text-[18px] text-[#1F2937]">Call</p>
               </div>
-              <div className="p-4 rounded-lg bg-[#F8FAFC] flex flex-col items-center gap-2 cursor-pointer ">
+              <div
+                onClick={() => handleActionBtn("text")}
+                className="p-4 rounded-lg bg-[#F8FAFC] flex flex-col items-center gap-2 cursor-pointer "
+              >
                 <MessageSquareMore size={28}></MessageSquareMore>
                 <p className="text-[18px] text-[#1F2937]">Text</p>
               </div>
-              <div className="p-4 rounded-lg bg-[#F8FAFC] flex flex-col items-center gap-2 cursor-pointer ">
+              <div
+                onClick={() => handleActionBtn("video")}
+                className="p-4 rounded-lg bg-[#F8FAFC] flex flex-col items-center gap-2 cursor-pointer "
+              >
                 <Video size={28}></Video>
                 <p className="text-[18px] text-[#1F2937]">Video</p>
               </div>

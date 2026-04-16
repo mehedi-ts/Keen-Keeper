@@ -1,4 +1,3 @@
-import React from "react";
 import facebookIcon from "../../assets/facebook.png";
 import instaIcon from "../../assets/instagram.png";
 import xIcon from "../../assets/twitter.png";

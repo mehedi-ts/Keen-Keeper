@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router";
 
 const FriendCard = ({ friend }) => {
@@ -15,8 +14,11 @@ const FriendCard = ({ friend }) => {
             {days_since_contact}d ago{" "}
           </p>
           <div className="flex items-center gap-2 flex-wrap justify-center">
-            {tags.map((tag) => (
-              <span className=" text-[#244D3F] text-[12px] font-medium bg-[#CBFADB] rounded-full py-1 px-2 flex items-center justify-center">
+            {tags.map((tag, index) => (
+              <span
+                key={index}
+                className=" text-[#244D3F] text-[12px] font-medium bg-[#CBFADB] rounded-full py-1 px-2 flex items-center justify-center"
+              >
                 {tag}
               </span>
             ))}
