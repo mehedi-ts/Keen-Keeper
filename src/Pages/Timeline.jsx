@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import { FriendTimelineContext } from "../Context/FriendTimelineContext";
 import TimelinCard from "../Components/Reusable/TimelinCard";
+import NoData from "../Components/Reusable/NoData";
 
 const Timeline = () => {
   const [filter, setFilter] = useState("all");
@@ -12,6 +13,10 @@ const Timeline = () => {
     }
     return item.type === filter;
   });
+
+  if (timeline.length === 0) {
+    return <NoData></NoData>;
+  }
   return (
     <div className="main-timeline max-w-277.5 mx-auto  py-20 ">
       <div className="title-sec ">

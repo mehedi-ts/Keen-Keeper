@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Legend, Pie, PieChart } from "recharts";
 import { FriendTimelineContext } from "../Context/FriendTimelineContext";
+import NoData from "../Components/Reusable/NoData";
 
 const Stats = () => {
   const { timeline } = useContext(FriendTimelineContext);
@@ -25,6 +26,9 @@ const Stats = () => {
     { name: "Call", value: count.call, fill: "#244D3F" },
     { name: "Video", value: count.video, fill: "#37A163" },
   ];
+  if (timeline.length === 0) {
+    return <NoData></NoData>;
+  }
   return (
     <div className="max-w-277.5 mx-auto flex flex-col gap-6 py-20">
       <h1 className="text-5xl font-bold text-[#1F2937]">
