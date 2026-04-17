@@ -4,7 +4,7 @@ const FriendCard = ({ friend }) => {
   const { name, days_since_contact, picture, status, tags } = friend;
   return (
     <Link to={`/friend/${friend.id}`}>
-      <div className="p-6 bg-white rounded-lg flex flex-col items-center gap-3 shadow-lg">
+      <div className="p-6 bg-white rounded-lg flex flex-col items-center gap-3 shadow-lg active:scale-95 transition">
         <div className="img h-20 w-20 flex items-center justify-center  rounded-full overflow-hidden ">
           <img className="w-full" src={picture} alt="" />
         </div>

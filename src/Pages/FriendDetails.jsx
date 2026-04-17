@@ -87,7 +87,7 @@ const FriendDetails = () => {
             <div className="btn bg-white text-base text-[#1F2937] font-medium shadow-sm flex items-center gap-2">
               <Archive size={18}></Archive> Archive
             </div>
-            <div className="btn bg-white text-base text-[#1F2937] font-medium shadow-sm flex items-center gap-2">
+            <div className="btn bg-white text-base font-medium shadow-sm flex items-center gap-2 text-[#EF4444]">
               <Trash2 size={18}></Trash2> Delete
             </div>
           </div>
@@ -134,7 +134,7 @@ const FriendDetails = () => {
             <div className="grid grid-cols-3 gap-2">
               <div
                 onClick={() => handleActionBtn("call")}
-                className="md:p-4 p-3 justify-center rounded-lg bg-[#F8FAFC] flex flex-col items-center gap-2 cursor-pointer "
+                className="md:p-4 p-3 justify-center rounded-lg bg-[#F8FAFC] flex flex-col items-center gap-2 cursor-pointer active:scale-96 active:bg-[#f1f1f1] transition "
               >
                 <PhoneCall className="w-5 md:w-6 lg:w-7"></PhoneCall>
                 <p className="text-[14px] md:text-[18px] text-[#1F2937]">
@@ -143,7 +143,7 @@ const FriendDetails = () => {
               </div>
               <div
                 onClick={() => handleActionBtn("text")}
-                className="md:p-4 p-3 rounded-lg bg-[#F8FAFC] flex flex-col items-center justify-center gap-2 cursor-pointer "
+                className="md:p-4 p-3 rounded-lg bg-[#F8FAFC] flex flex-col items-center justify-center gap-2 cursor-pointer active:scale-96 active:bg-[#f1f1f1] transition "
               >
                 <MessageSquareMore className="w-5 md:w-6 lg:w-7"></MessageSquareMore>
                 <p className="text-[14px] md:text-[18px] text-[#1F2937]">
@@ -152,7 +152,7 @@ const FriendDetails = () => {
               </div>
               <div
                 onClick={() => handleActionBtn("video")}
-                className="md:p-4 p-3 justify-center rounded-lg bg-[#F8FAFC] flex flex-col items-center gap-2 cursor-pointer "
+                className="md:p-4 p-3 justify-center rounded-lg bg-[#F8FAFC] flex flex-col items-center gap-2 cursor-pointer active:scale-96 active:bg-[#f1f1f1] transition "
               >
                 <Video className="w-5 md:w-6 lg:w-7"></Video>
                 <p className="text-[14px] md:text-[18px] text-[#1F2937]">

@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Legend, Pie, PieChart } from "recharts";
+import { Legend, Pie, PieChart, Tooltip } from "recharts";
 import { FriendTimelineContext } from "../Context/FriendTimelineContext";
 import NoData from "../Components/Reusable/NoData";
 
@@ -61,6 +61,7 @@ const Stats = () => {
               // isAnimationActive={isAnimationActive}
             />
             <Legend></Legend>
+            <Tooltip></Tooltip>
           </PieChart>
         </div>
       </div>
