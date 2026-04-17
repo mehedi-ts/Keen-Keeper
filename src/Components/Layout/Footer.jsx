@@ -34,7 +34,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="footer2 border-t border-[#b7b7b722] flex flex-col gap-4 md:flex-row md:gap-0 justify-between items-center pt-7.5">
+        <div className="footer2 border-t border-[#b7b7b722] flex flex-col gap-4 md:flex-col md:gap-4 lg:flex-row lg:gap-0 justify-between items-center pt-7.5 ">
           <p className="text-[#dddcdc8c] text-base">
             © 2026 KeenKeeper. All rights reserved.
           </p>

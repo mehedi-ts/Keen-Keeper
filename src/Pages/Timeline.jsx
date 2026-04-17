@@ -18,7 +18,7 @@ const Timeline = () => {
     return <NoData></NoData>;
   }
   return (
-    <div className="main-timeline max-w-277.5 mx-auto py-8 md:py-20 px-2 md:px-0 ">
+    <div className="main-timeline max-w-277.5 mx-auto py-8 md:py-20 px-2 md:px-2 lg:px-0 ">
       <div className="title-sec flex flex-col items-center md:items-start ">
         <h1 className="text-5xl font-bold text-[#1F2937] mb-3 md:mb-6">
           Timeline

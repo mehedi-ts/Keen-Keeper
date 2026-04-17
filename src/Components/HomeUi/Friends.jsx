@@ -5,7 +5,7 @@ const Friends = ({ friendspromis }) => {
   const friendsData = use(friendspromis);
   console.log(friendsData);
   return (
-    <div className="mt-10">
+    <div className="mt-10 px-2.5">
       <h1 className="font-semibold text-center md:text-left  text-2xl text-[#1F2937] mb-4">
         Your Friends
       </h1>

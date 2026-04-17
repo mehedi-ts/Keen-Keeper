@@ -49,7 +49,7 @@ const FriendDetails = () => {
 
   return (
     <div className="w-full py-8 md:py-20">
-      <div className="max-w-277.5 mx-auto  grid grid-cols-1 place-items-center md:grid-cols-5 gap-6 px-2.5 md:px-0 ">
+      <div className="max-w-277.5 mx-auto  grid grid-cols-1 place-items-center md:px-4 md:grid-cols-5 gap-6 px-2.5 lg:px-0 md:place-items-start ">
         <div className="person md:col-span-2 flex flex-col gap-4 ">
           <div className="mainbox ">
             <div className="p-6 bg-white rounded-lg flex flex-col items-center gap-3 shadow-lg">
@@ -93,7 +93,7 @@ const FriendDetails = () => {
           </div>
         </div>
         <div className="stat  md:col-span-3 flex flex-col gap-6 p-0">
-          <div className="grid grid-cols-1 md:grid-cols-3 md:gap-6 gap-3 ">
+          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 md:gap-3 lg:gap-6 gap-3 ">
             <div className=" flex flex-col shadow-md rounded-lg items-center py-8 px-4 bg-white">
               <h1 className=" text-3xl font-semibold text-[#244D3F]">
                 {days_since_contact}
