@@ -8,7 +8,7 @@ const friendspromis = createFriendspromis();
 const Home = () => {
   return (
     <div className="max-w-277.5 mx-auto  py-20">
-      <Banner></Banner>
+      <Banner friendspromis={friendspromis}></Banner>
       <Suspense
         fallback={
           <div className="w-full h-[50vh] flex items-center justify-center">

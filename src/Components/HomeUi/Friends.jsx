@@ -1,9 +1,10 @@
-import React, { use } from "react";
 import FriendCard from "../Reusable/FriendCard";
+import { FriendTimelineContext } from "../../Context/FriendTimelineContext";
+import { use } from "react";
 
 const Friends = ({ friendspromis }) => {
   const friendsData = use(friendspromis);
-  console.log(friendsData);
+
   return (
     <div className="mt-10 px-2.5">
       <h1 className="font-semibold text-center md:text-left  text-2xl text-[#1F2937] mb-4">

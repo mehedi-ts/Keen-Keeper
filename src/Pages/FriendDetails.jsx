@@ -13,9 +13,8 @@ import { FriendTimelineContext } from "../Context/FriendTimelineContext";
 import { toast } from "react-toastify";
 
 const FriendDetails = () => {
-  const { addEvent, timeline } = useContext(FriendTimelineContext);
+  const { addEvent } = useContext(FriendTimelineContext);
 
-  console.log(timeline);
   const { id } = useParams();
   const friends = useLoaderData();
   console.log(friends);
