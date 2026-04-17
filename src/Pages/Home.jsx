@@ -4,11 +4,20 @@ import Friends from "../Components/HomeUi/Friends";
 import { ClipLoader } from "react-spinners";
 const createFriendspromis = () =>
   fetch("/FriendsData.json").then((res) => res.json());
+// const createFriendspromis = () =>
+//   new Promise((resolve) => {
+//     setTimeout(() => {
+//       fetch("/FriendsData.json")
+//         .then((res) => res.json())
+//         .then((data) => resolve(data));
+//     }, 1500);
+//   });
 const friendspromis = createFriendspromis();
 const Home = () => {
   return (
     <div className="max-w-277.5 mx-auto  py-20">
-      <Banner friendspromis={friendspromis}></Banner>
+      <Banner></Banner>
+
       <Suspense
         fallback={
           <div className="w-full h-[50vh] flex items-center justify-center">

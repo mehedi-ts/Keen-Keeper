@@ -9,7 +9,7 @@ const MainLayout = () => {
   return (
     <>
       <div className="bg-[#F8FAFC]">
-        <Scroll></Scroll>
+        {/* <Scroll></Scroll> */}
         <Navbar></Navbar>
         <Outlet></Outlet>
         <Footer></Footer>

@@ -1,13 +1,7 @@
 import { Plus } from "lucide-react";
 import React, { use } from "react";
 
-const Banner = ({ friendspromis }) => {
-  const friendsData = use(friendspromis);
-
-  const onTrack = friendsData.filter((item) => item.status === "on-track");
-  const almostDue = friendsData.filter((item) => item.status === "almost due");
-  const overdue = friendsData.filter((item) => item.status === "overdue");
-
+const Banner = ({}) => {
   return (
     <>
       <div className="flex flex-col gap-10 border-b border-[#E9E9E9]">
@@ -29,27 +23,19 @@ const Banner = ({ friendspromis }) => {
         </div>
         <div className="count grid grid-cols-1 px-2 md:px-2 lg:px-0 lg:grid-cols-4 md:grid-cols-2 gap-6 pb-10">
           <div className="box p-8  flex flex-col items-center gap-2 bg-white rounded-lg shadow-lg">
-            <h3 className="text-4xl font-semibold text-[#244D3F]">
-              {friendsData.length}
-            </h3>
+            <h3 className="text-4xl font-semibold text-[#244D3F]">12</h3>
             <p className="text-[18px] text-[#64748B]">Total Friends</p>
           </div>
           <div className="box p-8 flex flex-col items-center gap-2 bg-white rounded-lg shadow-lg">
-            <h3 className="text-4xl font-semibold text-[#244D3F]">
-              {onTrack.length}
-            </h3>
+            <h3 className="text-4xl font-semibold text-[#244D3F]">6</h3>
             <p className="text-[18px] text-[#64748B]">On Track</p>
           </div>
           <div className="box p-8  flex flex-col items-center gap-2 bg-white rounded-lg shadow-lg">
-            <h3 className="text-4xl font-semibold text-[#244D3F]">
-              {almostDue.length + overdue.length}
-            </h3>
+            <h3 className="text-4xl font-semibold text-[#244D3F]">7</h3>
             <p className="text-[18px] text-[#64748B]">Need Attention</p>
           </div>
           <div className="box p-8 flex flex-col items-center gap-2 bg-white rounded-lg shadow-lg">
-            <h3 className="text-4xl font-semibold text-[#244D3F]">
-              {friendsData.length}
-            </h3>
+            <h3 className="text-4xl font-semibold text-[#244D3F]">12</h3>
             <p className="text-[18px] text-[#64748B]">
               Interactions This Month
             </p>
