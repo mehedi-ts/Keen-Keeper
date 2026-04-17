@@ -30,7 +30,7 @@ const Stats = () => {
     return <NoData></NoData>;
   }
   return (
-    <div className="max-w-277.5 mx-auto flex flex-col gap-6 py-20">
+    <div className="max-w-277.5 mx-auto flex flex-col gap-6 py-8 px-2 md:px-0 min-h-screen md:min-h-fit md:py-20">
       <h1 className="text-5xl font-bold text-[#1F2937]">
         Friendship Analytics
       </h1>

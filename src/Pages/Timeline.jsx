@@ -39,9 +39,13 @@ const Timeline = () => {
         </div>
       </div>
       <div className="timeline-card">
-        {filterTimeline.map((ti, index) => (
-          <TimelinCard ti={ti} key={index}></TimelinCard>
-        ))}
+        {filterTimeline.length === 0 ? (
+          <NoData></NoData>
+        ) : (
+          filterTimeline.map((ti, index) => (
+            <TimelinCard ti={ti} key={index}></TimelinCard>
+          ))
+        )}
       </div>
     </div>
   );
