@@ -1,3 +1,4 @@
+import { Plus } from "lucide-react";
 import React, { use } from "react";
 
 const Banner = ({ friendspromis }) => {
@@ -21,8 +22,8 @@ const Banner = ({ friendspromis }) => {
             </p>
           </div>
           <div className="add-btn">
-            <button className="btn bg-[#244D3F] text-white text-base font-semibold">
-              + Add a Friend
+            <button className="btn bg-[#244D3F] text-white text-base font-semibold flex items-center gap-1">
+              <Plus className="h-4 w-4"></Plus>Add a Friend
             </button>
           </div>
         </div>
