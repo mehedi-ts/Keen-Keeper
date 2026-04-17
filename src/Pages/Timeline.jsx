@@ -18,15 +18,17 @@ const Timeline = () => {
     return <NoData></NoData>;
   }
   return (
-    <div className="main-timeline max-w-277.5 mx-auto  py-20 ">
-      <div className="title-sec ">
-        <h1 className="text-5xl font-bold text-[#1F2937] mb-6">Timeline</h1>
-        <div>
-          <fieldset className="fieldset">
+    <div className="main-timeline max-w-277.5 mx-auto py-8 md:py-20 px-2 md:px-0 ">
+      <div className="title-sec flex flex-col items-center md:items-start ">
+        <h1 className="text-5xl font-bold text-[#1F2937] mb-3 md:mb-6">
+          Timeline
+        </h1>
+        <div className=" w-74 md:w-86.75 text-[18px] text-[#64748B] ">
+          <fieldset className="fieldset w-full ">
             <select
               onChange={(e) => setFilter(e.target.value)}
               defaultValue="Pick a browser"
-              className="select outline-none"
+              className="select outline-none w-full bg-[#F8FAFC]"
             >
               <option value="all">All</option>
               <option value="call">Call</option>
