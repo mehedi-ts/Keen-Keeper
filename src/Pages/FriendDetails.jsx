@@ -48,9 +48,9 @@ const FriendDetails = () => {
   };
 
   return (
-    <div className="w-full py-20">
-      <div className="max-w-277.5 mx-auto  py grid grid-cols-5 gap-6">
-        <div className="person col-span-2 flex flex-col gap-4">
+    <div className="w-full py-8 md:py-20">
+      <div className="max-w-277.5 mx-auto  grid grid-cols-1 place-items-center md:grid-cols-5 gap-6 px-2.5 md:px-0 ">
+        <div className="person md:col-span-2 flex flex-col gap-4 ">
           <div className="mainbox ">
             <div className="p-6 bg-white rounded-lg flex flex-col items-center gap-3 shadow-lg">
               <div className="img h-20 w-20 flex items-center justify-center  rounded-full overflow-hidden ">
@@ -92,10 +92,10 @@ const FriendDetails = () => {
             </div>
           </div>
         </div>
-        <div className="stat  col-span-3 flex flex-col gap-6 p-0">
-          <div className="grid grid-cols-3 gap-6 ">
+        <div className="stat  md:col-span-3 flex flex-col gap-6 p-0">
+          <div className="grid grid-cols-1 md:grid-cols-3 md:gap-6 gap-3 ">
             <div className=" flex flex-col shadow-md rounded-lg items-center py-8 px-4 bg-white">
-              <h1 className="text-3xl font-semibold text-[#244D3F]">
+              <h1 className=" text-3xl font-semibold text-[#244D3F]">
                 {days_since_contact}
               </h1>
               <p className="text-[18px] text-[#64748B]">Days Since Contact</p>
@@ -134,24 +134,30 @@ const FriendDetails = () => {
             <div className="grid grid-cols-3 gap-2">
               <div
                 onClick={() => handleActionBtn("call")}
-                className="p-4 rounded-lg bg-[#F8FAFC] flex flex-col items-center gap-2 cursor-pointer "
+                className="md:p-4 p-3 justify-center rounded-lg bg-[#F8FAFC] flex flex-col items-center gap-2 cursor-pointer "
               >
-                <PhoneCall size={28}></PhoneCall>
-                <p className="text-[18px] text-[#1F2937]">Call</p>
+                <PhoneCall className="w-5 md:w-6 lg:w-7"></PhoneCall>
+                <p className="text-[14px] md:text-[18px] text-[#1F2937]">
+                  Call
+                </p>
               </div>
               <div
                 onClick={() => handleActionBtn("text")}
-                className="p-4 rounded-lg bg-[#F8FAFC] flex flex-col items-center gap-2 cursor-pointer "
+                className="md:p-4 p-3 rounded-lg bg-[#F8FAFC] flex flex-col items-center justify-center gap-2 cursor-pointer "
               >
-                <MessageSquareMore size={28}></MessageSquareMore>
-                <p className="text-[18px] text-[#1F2937]">Text</p>
+                <MessageSquareMore className="w-5 md:w-6 lg:w-7"></MessageSquareMore>
+                <p className="text-[14px] md:text-[18px] text-[#1F2937]">
+                  Text
+                </p>
               </div>
               <div
                 onClick={() => handleActionBtn("video")}
-                className="p-4 rounded-lg bg-[#F8FAFC] flex flex-col items-center gap-2 cursor-pointer "
+                className="md:p-4 p-3 justify-center rounded-lg bg-[#F8FAFC] flex flex-col items-center gap-2 cursor-pointer "
               >
-                <Video size={28}></Video>
-                <p className="text-[18px] text-[#1F2937]">Video</p>
+                <Video className="w-5 md:w-6 lg:w-7"></Video>
+                <p className="text-[14px] md:text-[18px] text-[#1F2937]">
+                  Video
+                </p>
               </div>
             </div>
           </div>
